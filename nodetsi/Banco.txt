@@ -1,0 +1,30 @@
+users
+
+- _id
+- name
+- email
+- state
+- passwordHash
+- token
+
+states
+
+- _id
+- name
+
+categorias
+
+- _id
+- name
+- slug
+
+ads
+
+- _id
+- idUser
+- status
+- images[{url, default:true}]
+- category
+- price
+- description
+- dateCreated

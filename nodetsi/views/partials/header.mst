@@ -1,0 +1,38 @@
+<html>
+<head>
+{{#pageTitle}}
+    <title>{{pageTitle}} </title>
+{{/pageTitle}}
+
+{{^pageTitle}}
+      <title>{{h.detaultPageTitle}} </title>
+{{/pageTitle}}
+    
+</head>
+
+<body>
+
+<h1> Cabeçalho</h1>
+<hr/>
+<h1> Curso</h1>
+<hr/>
+<ul>
+    {{#h.menu}}
+    <li> <a href="{{slug}}"> {{name}}</li>
+    {{/h.menu}}
+</ul>
+
+{{#curso}}
+    <p>Curso: {{curso}}</p>
+{{/curso}}
+
+<h1> Finalidade</h1>
+{{#finalidade}}
+    <p>Finalidade: {{finalidade}}</p>
+{{/finalidade}}
+<h1> Vontade</h1>
+{{#vontade}}
+    <p>Vontade: {{vontade}}</p>
+{{/vontade}}
+<hr/>
+<p> Tudo</p>
